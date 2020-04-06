@@ -6,7 +6,6 @@
 package progfvma006;
 
 import java.util.Scanner;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -20,9 +19,11 @@ public class ProgFVMA006 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
-        int arreglo[], x, aux;
+        int arreglo[],aux;
 
-        x = Integer.parseInt(JOptionPane.showInputDialog("Introduzca el numero del arreglo"));
+        Scanner datos = new Scanner(System.in);
+        System.out.print("Ingrese el valor de x: ");
+        int x = datos.nextInt();
 
         arreglo = new int[x]; //Le asignamos el numero de elementos al arreglo
 
